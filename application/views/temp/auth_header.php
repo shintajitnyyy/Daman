@@ -99,30 +99,3 @@
         }
     </style>
 </head>
-
-<body>
-    <div class="background-image">
-
-    </div>
-    <form>
-        <h3>Selamat Datang!</h3>
-        <h4>Silahkan Log In untuk mengakses dashboard.</h4>
-
-        <div class="container">
-            <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Username" name="username" required>
-
-            <label for="pass">Password</label>
-            <input type="password" placeholder="Password" id="password" name="password" required>
-
-            <button type="submit">Masuk</button>
-
-
-        </div>
-
-
-
-    </form>
-</body>
-
-</html>
