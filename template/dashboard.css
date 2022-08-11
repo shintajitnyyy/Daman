@@ -78,3 +78,18 @@ color: #ffffff;
 .wrapper .sidebar ul li a.active:before{
 display: block;
 }
+
+form{
+  width: 1180px;
+  height: 600px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  position: absolute;
+  padding: 50px 35px;
+  box-sizing: content-box;
+  top: 50%;
+  left: 880px;
+  transform: translate(-50%, -50%);
+}
+
+
