@@ -104,7 +104,7 @@
     <div class="background-image">
 
     </div>
-    <form class="user" method="post" action="<?= base_url('auth'); ?>">
+    <form class="user" method="post" action="">
         <h3>Selamat Datang!</h3>
         <h4>Silahkan Log In untuk mengakses dashboard.</h4>
 
