@@ -24,5 +24,13 @@ class Auth extends CI_Controller
         $password = $this->input->post('password');
 
         $user = $this->db->get_where('user', ['username' => $username])->row_array();
+
+        if ($user) {
+            //user ada
+        } else {
+            $this->session->set_flashdata('message', '<div class="alert 
+            alert-danger" role="alert">Username Tidak ada!</div>');
+            redirect('auth');
+        }
     }
 }
