@@ -104,17 +104,25 @@
     <div class="background-image">
 
     </div>
-    <form>
+    <form class="user" method="post" action="<?= base_url('auth'); ?>">
         <h3>Selamat Datang!</h3>
         <h4>Silahkan Log In untuk mengakses dashboard.</h4>
 
         <div class="container">
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Username" name="username" required>
-
+            <?= form_error(
+                'username',
+                '<small class="text-danger pl-3">',
+                '</small>'
+            ); ?>
             <label for="pass">Password</label>
             <input type="password" placeholder="Password" id="password" name="password" required>
-
+            <?= form_error(
+                'password',
+                '<small class="text-danger pl-3">',
+                '</small>'
+            ); ?>
             <button type="submit">Masuk</button>
 
 
