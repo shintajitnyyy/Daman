@@ -25,8 +25,21 @@ class Auth extends CI_Controller
 
         $user = $this->db->get_where('user', ['username' => $username])->row_array();
 
+
         if ($user) {
-            //user ada
+            //cek password
+            if (password_verify($password, $user['password'])) {
+                $data = [
+                    'Username' => $user['Ssername'],
+                    'role_id'  => $user['role_ad']
+                ];
+                $this->session->set_userdata($data);
+                redirect('user');
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert 
+            alert-danger" role="alert">Password Salah</div>');
+                redirect('auth');
+            }
         } else {
             $this->session->set_flashdata('message', '<div class="alert 
             alert-danger" role="alert">Username Tidak ada!</div>');

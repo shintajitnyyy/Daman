@@ -104,9 +104,15 @@
     <div class="background-image">
 
     </div>
-    <form class="user" method="post" action="">
+
+
+
+    <form class="user" method="post" action="<?= base_url('auth'); ?>">
         <h3>Selamat Datang!</h3>
         <h4>Silahkan Log In untuk mengakses dashboard.</h4>
+
+        <?= $this->session->flashdata('message'); ?>
+
 
         <div class="container">
             <label for="username">Username</label>
