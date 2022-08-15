@@ -143,3 +143,26 @@ input[type=text], input[type=password] {
   font-weight: bolder;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+  border: 1px solid rgb(255, 255, 255);
+  color: #000000;
+  font-size: 10px;
+
+
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
