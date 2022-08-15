@@ -30,8 +30,8 @@ class Auth extends CI_Controller
             //cek password
             if (password_verify($password, $user['password'])) {
                 $data = [
-                    'Username' => $user['Ssername'],
-                    'role_id'  => $user['role_ad']
+                    'Username' => $user['username'],
+                    'role_id'  => $user['role_id']
                 ];
                 $this->session->set_userdata($data);
                 redirect('user');
