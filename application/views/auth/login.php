@@ -122,8 +122,8 @@
                 '<small class="text-danger pl-3">',
                 '</small>'
             ); ?>
-            <label for="pass">Password</label>
-            <input type="password" placeholder="Password" id="password" name="password" required>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" name="password" required>
             <?= form_error(
                 'password',
                 '<small class="text-danger pl-3">',
