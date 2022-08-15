@@ -83,7 +83,7 @@ form{
   width: 1180px;
   height: 600px;
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: #000000;
   position: absolute;
   padding: 50px 35px;
   box-sizing: content-box;
@@ -97,4 +97,48 @@ form .profile {
   color: #ffffff;
 }
 
+.container {
+  padding: 30px;
+  font-size: 18px;
+  text-align: left;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  width: 40%;
+  margin-top: 20px;
+}
 
+::placeholder {
+  color: #423e3e;
+}
+
+.container h1{
+  font-family: 'Popping', sans-serif;
+  font-size: 40px;
+  width: auto;
+
+}
+
+.container button {
+  margin-top: 10px;
+  width: auto;
+  background-color: #ff0000dc;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+input[type=text], input[type=password] {
+
+  height: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bolder;
+}
