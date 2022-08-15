@@ -83,7 +83,7 @@ form{
   width: 1180px;
   height: 600px;
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: #000000;
   position: absolute;
   padding: 50px 35px;
   box-sizing: content-box;
@@ -92,4 +92,18 @@ form{
   transform: translate(-50%, -50%);
 }
 
+/* Style buttons */
+.btn {
+  background-color: rgb(255, 0, 0);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+}
 
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(255, 0, 0);
+}
