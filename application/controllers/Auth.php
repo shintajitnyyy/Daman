@@ -18,6 +18,12 @@ class Auth extends CI_Controller
         }
     }
 
+    public function registrasi()
+    {
+        $data['title'] = 'Registrasi';
+        $this->load->view('auth/registrasi');
+    }
+
     private function _login()
     {
         $username = $this->input->post('username');

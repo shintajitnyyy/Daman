@@ -111,7 +111,7 @@
         <h3>Selamat Datang!</h3>
         <h4>Silahkan Log In untuk mengakses dashboard.</h4>
 
-        <?= $this->session->flashdata('message'); ?>
+        <h5><?= $this->session->flashdata('message'); ?></h5>
 
 
         <div class="container">
